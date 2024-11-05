@@ -15,6 +15,7 @@ import van from "../../Assets/vanlife.png"
 import nowalls from "../../Assets/nowalls.png"
 import resell from "../../Assets/resell.png"
 import cater from "../../Assets/cater.png"
+import bakers from "../../Assets/Projects/bakers.png"
 
 const responsive = {
   superLargeDesktop: {
@@ -82,11 +83,12 @@ function Projects() {
             />
           </div>
 
+
           <div>
             <ProjectCard
-              imgPath={nowalls}
+              imgPath={bakers}
               isBlog={false}
-              title="NO-WALLS"
+              title="BAKER'S INN"
               ghLink="https://github.com/kundi04"
               demoLink="https://no-walls-126a6.web.app"
             />
