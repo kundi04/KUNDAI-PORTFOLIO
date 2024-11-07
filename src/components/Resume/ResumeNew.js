@@ -13,7 +13,7 @@ function ResumeCard() {
     <Container fluid className="resume-section">
       <Particle />
       <Row style={{ justifyContent: "center", position: "relative" }}>
-        <Card style={{ width: "auto", maxWidth: "1000px", marginBottom: "20px" }} className="text-center">
+        <Card style={{  }} className="text-center cvimg">
           <Card.Img variant="top" src={resumeImage} alt="Resume" />
           <Card.Body>
             <Button

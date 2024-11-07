@@ -60,9 +60,9 @@ html {
   color: var(--imp-text-color) !important;
 }
 
-button:focus {
+/* button:focus {
   box-shadow: none !important;
-}
+} */
 
 
 
@@ -71,6 +71,9 @@ button:focus {
   height: 100vh;
 }
 
+/* --------- */
+/*Scrollbar   */
+/* --------- */
 
 ::-webkit-scrollbar {
   width: 7px;
@@ -286,11 +289,33 @@ button:focus {
 
 }
 
+
 .home-content {
   padding: 9rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
   height: 62vh;
+  
+}
+
+
+@media (max-width: 768px) {
+  .home-content {
+   margin-bottom: 120px;
+    
+  }
+  
+}
+
+
+
+@media (max-width: 414px) {
+  .home-content {
+   margin-top: -120px;
+   margin-bottom: 150px;
+    
+  }
+  
 }
 
 .heading {
@@ -322,9 +347,11 @@ button:focus {
     font-size: 1.4em !important;
     font-weight: 500 !important;
     position: absolute !important;
+ 
   }
   .Typewriter__cursor {
     display: none !important;
+   
   }
 }
 
@@ -337,6 +364,8 @@ button:focus {
   .myAvtar {
     padding-top: 2em !important;
     padding-bottom: 2em !important;
+   
+    
   }
 }
 
@@ -441,7 +470,10 @@ button:focus {
 }
 
 @media (max-width: 767px) {
+
+ 
   .footer-copywright {
+
     text-align: center !important;
   }
 
@@ -498,6 +530,14 @@ button:focus {
   transform: scale(1.02) !important;
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+}
+
+@media (max-width: 768px) {
+  .project-section{
+    margin-bottom: 60px;
+  }
+
+
 }
 
 .blog-card {
@@ -635,81 +675,32 @@ button:focus {
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
+
+  .cvimg {
+
+    width: 800px;
+    max-width: 1000px;
+     margin-bottom: 20px;
+    }
 }
 
-.resume {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  justify-content: center;
-}
 
-.resume-left {
-  padding-right: 80px !important;
-}
 
-.resume-right {
-  padding-left: 80px !important;
-}
+@media (max-width: 768px) {
+  .resume-section{
+    overflow-x: hidden;
+    margin-bottom: 250px;
 
-@media (max-width: 767px) {
-  .resume-left {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
+
+    .cvimg {
+      width: 350px;
+      height: 40vh;
+      }
   }
 
-  .resume-right {
-    padding-right: 15px !important;
-    padding-left: 15px !important;
+  .cvimg{
+    width: 20vh;
   }
-}
-.resume .resume-title {
-  font-size: 2em;
-  font-weight: 700;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.resume .resume-item {
-  padding: 0 0 10px 25px;
-  margin-top: -2px;
-  border-left: 2px solid #8a49a8;
-  position: relative;
-}
-
-.resume .resume-item .resume-title {
-  line-height: 18px;
-  font-size: 0.9em;
-  background: #5234795d;
-  padding: 8px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item ul {
-  padding-left: 20px;
-  text-align: justify;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-  list-style: none;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #fff;
-  border: 2px solid #8a49a8;
 }
 
 .like-item {
@@ -813,20 +804,6 @@ button:focus {
 
 }
 
-.connect-button {
-  margin-top: 1rem;
-  background-color: #333;
-  border: none;
-  border-radius: 5px;
-  padding: 0.75rem 1.5rem;
-  font-weight: bold;
-  color: #ffffff;
-  transition: background-color 0.3s ease;
-}
-
-.connect-button:hover {
-  background-color: #555;
-}
 
 .form-section {
   margin-top: 100px;
@@ -848,15 +825,17 @@ button:focus {
   margin-left: 190px;
 }
 
-.form-section .form-control::placeholder {
+.input {
   color: white;
+  background-color: transparent;
   opacity: 0.7;
 }
 
-.send-button {
+ .send {
+  background-color: rgba(155, 88, 173, 0.65);
+  cursor: pointer !important;
   width: 74%;
   margin-left: 190px;
-  background-color: #333;
   border: none;
   border-radius: 5px;
   padding: 0.75rem;
@@ -864,9 +843,87 @@ button:focus {
   color: #ffffff;
   transition: background-color 0.3s ease;
   margin-bottom: 60px;
+
 }
 
-.send-button:hover {
-  background-color: #555;
+
+@media (width: 414px) {
+  .heading-section {
+    margin-top: 100px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .heading-section h2 {
+    font-size: 28px;
+    width: 80vw;
+    margin-top: 30px;
+  }
+
+  .heading-section p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .form-section {
+    margin-top: 50px;
+  }
+
+  .form-section .form-control {
+    width: 230%;
+    margin-left: -85px;
+    margin-bottom: 1rem;
+  }
+
+  .send {
+    margin-bottom: 70px;
+    width: 230%;
+    margin-left: -80px;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
 }
 
+
+@media (width: 768px) {
+  .heading-section {
+    margin-top: 100px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .heading-section h2 {
+    font-size: 28px;
+    width: 80vw;
+    margin-top: 30px;
+  }
+
+  .heading-section p {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+  }
+
+  .form-section {
+    margin-top: 50px;
+  }
+
+  .form-section .form-control {
+    width: 430%;
+    margin-left: -220px;
+    margin-bottom: 1rem;
+  }
+
+  .send {
+    margin-bottom: 70px;
+    width: 90%;
+    margin-left: 0;
+    padding: 0.75rem;
+    font-size: 1rem;
+  }
+
+  .outer-container {
+    padding: 1rem;
+  }
+}
