@@ -773,16 +773,20 @@ html {
   gap: 2rem;
 }
 
+
+
 /* Responsive stacking for smaller screens */
-@media (max-width: 768px) {
+
   .outer-container {
-    flex-direction: column;
+  
+  display: flex;
     align-items: center;
+
   }
-}
+
 
 .heading-section {
-  margin-top: 100px;
+  margin-top: -100px;
   flex: 1;
   text-align: left;
  margin-left: -220px;
@@ -848,6 +852,15 @@ html {
 
 
 @media (width: 414px) {
+  
+
+  .outer-container {
+    display: flex;
+    flex-direction: column;
+      align-items: center;
+    }
+  
+  
   .heading-section {
     margin-top: 100px;
     text-align: center;
@@ -887,6 +900,14 @@ html {
 
 
 @media (width: 768px) {
+
+  .outer-container {
+    display: flex;
+    flex-direction: column;
+      align-items: center;
+    }
+  
+
   .heading-section {
     margin-top: 100px;
     text-align: center;

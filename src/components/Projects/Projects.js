@@ -90,7 +90,7 @@ function Projects() {
               isBlog={false}
               title="BAKER'S INN"
               ghLink="https://github.com/kundi04"
-              demoLink="https://no-walls-126a6.web.app"
+              demoLink="https://bakers-inn-co.web.app"
             />
           </div>
 
@@ -131,7 +131,7 @@ function Projects() {
               isBlog={false}
               title="NYAMATUSI"
               ghLink="https://github.com/kundi04"
-              demoLink="https://blogs.soumya-jit.tech/"
+              demoLink=""
             />
           </div>
           <div>
